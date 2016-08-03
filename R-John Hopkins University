@@ -1,5 +1,0 @@
->unique() #看一个变量中有多少个level
->ifelse, which, %in% #http://blog.sina.com.cn/s/blog_3d7eadd20101jam4.html
->#合并数据：横向合并merge-加列、纵向合并rbind-加行
->rename(mydata,c(x1="y1"))#重命名变量名称
->lattice() # http://blog.csdn.net/yhb315279058/article/details/49429957

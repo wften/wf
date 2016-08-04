@@ -5,3 +5,6 @@ cutpoints <- quantile(maacs$logno2_new,seq(0,1,length=4),na.rm=TRUE) ##calculate
 maacs$2dec <- cut(maacs$logno2_new,cutpoints) ##cut the data at the deciles and create a new factor variable
 levels(maacs$no2dec) ##see the levels of the newly created factor variable
 
+#Hierarchical clustering - dist  测试每个点的距离
+distxy <- dist(dataframe)
+hClustering <- hclust(distxy)

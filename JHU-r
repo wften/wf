@@ -8,3 +8,7 @@ levels(maacs$no2dec) ##see the levels of the newly created factor variable
 #Hierarchical clustering - dist  测试每个点的距离
 distxy <- dist(dataframe)
 hClustering <- hclust(distxy)
+
+distance or similarity
+continuous: eucilidean distance ; correslation similarity.
+binary: manhattan distance

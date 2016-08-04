@@ -1,0 +1,7 @@
+qplot(logpm25,nocturnalSympt,data=maacs,facets=.~bmicat,geom=c("point","smooth"),methed="lm") #normal qplot using
+
+#离散化by using cut function
+cutpoints <- quantile(maacs$logno2_new,seq(0,1,length=4),na.rm=TRUE) ##calculate the deciles of the data
+maacs$2dec <- cut(maacs$logno2_new,cutpoints) ##cut the data at the deciles and create a new factor variable
+levels(maacs$no2dec) ##see the levels of the newly created factor variable
+

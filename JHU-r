@@ -12,3 +12,15 @@ hClustering <- hclust(distxy)
 distance or similarity
 continuous: eucilidean distance ; correslation similarity.
 binary: manhattan distance
+
+#Dimension reduction
+ And you see the idea is that we want to create a set of variables that is smaller 
+ than the original set of variables that we have and that are all uncorrelated with each other.
+ So that they kind of represent different types of variation in your data set. And similarly,
+ we want this reduced set of variables to explain as much of the variability in your data set, as possible. 
+ 
+ Singular value decomposition ~~ SVD ==>> U--正交矩阵，左奇异向量 ；V ==>> 右奇异向量(right singular vector) ；D ==>> 包含奇异值得对角矩阵(diagonal matrix)
+ Principle components analysis ~~ PCA
+ 
+ 处理缺失值：impute function ，download from bioconductor
+ impute.knn(dataMatrix2)$data
